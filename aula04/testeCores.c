@@ -17,14 +17,8 @@ main()
 
       for(i=0;i<=255;i++)
       {
-         SetConsoleTextAttribute
-         (
-            GetStdHandle(STD_OUTPUT_HANDLE),
-            i
-         );
+         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),i);
 
          printf("teste %03d\n",i);
       }
-
-      for(;;) ;
 }
