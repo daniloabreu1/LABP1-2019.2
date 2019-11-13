@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1573660390 source:d:\google drive\trabalho\uepb\2019-2\labp1\códigos\aula22\pilha\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
+1573658385 d:\google drive\trabalho\uepb\2019-2\labp1\códigos\aula22\pilha\pilha.h
+
+1573660567 source:d:\google drive\trabalho\uepb\2019-2\labp1\códigos\aula22\pilha\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
