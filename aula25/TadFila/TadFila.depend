@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1574232896 source:d:\google drive\trabalho\uepb\2019-2\labp1\códigos\aula25\tadfila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Fila.h"
+
+1574232908 d:\google drive\trabalho\uepb\2019-2\labp1\códigos\aula25\tadfila\fila.h
+
