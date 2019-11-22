@@ -16,7 +16,6 @@ void pegarDado(ELEM *e){
     printf("\nDigite um numero para ser armazenado >> ");
     scanf("%d",&e->d.valor);
 }
-
 LISTA* criarLista(){
     LISTA *li = (LISTA*)malloc(sizeof(LISTA));
     if(li!=NULL){
