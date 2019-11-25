@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1574683898 source:d:\google drive\trabalho\uepb\2019-2\lp1 tarde\códigos\aula27\listadupla\main.c
+	"listaDupla.h"
+	<stdio.h>
+
+1574682278 d:\google drive\trabalho\uepb\2019-2\lp1 tarde\códigos\aula27\listadupla\listadupla.h
+
+1574683451 source:d:\google drive\trabalho\uepb\2019-2\lp1 tarde\códigos\aula27\listadupla\listadupla.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"listaDupla.h"
+
