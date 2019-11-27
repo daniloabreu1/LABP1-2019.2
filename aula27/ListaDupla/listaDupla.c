@@ -6,7 +6,6 @@ struct dado{
     char nome[31];
     char telefone[18];
 };
-
 struct elemento{
     DADO dados;
     ELEM *ant;
@@ -24,7 +23,6 @@ void pegarDado(ELEM *e){
     setbuf(stdin,NULL);
     gets(e->dados.telefone);
 }
-
 LISTAD* criarLista(){
     LISTAD *li = (LISTAD*)malloc(sizeof(LISTAD));
     if(li!=NULL){
@@ -94,36 +92,35 @@ void inserir(LISTAD *li){
     }
 }
 void remover(LISTAD *li, int pos){
-    if(li->inicio!=NULL){
+    if(li!=NULL){
         if(li->inicio==NULL)
             return;
         ELEM *aux=li->inicio;
-            int cont=1;
-            if(cont==pos){
-                li->inicio=aux->prox;
-                if(aux->prox!=NULL)
-                    aux->prox->ant=NULL;
-                free(aux);
-            }else{
-                ELEM *ant;
-                while((aux!=NULL)&&(cont != pos)){
-                    ant=aux;
-                    aux=aux->prox;
-                    cont++;
-                }
-                if(aux==NULL){
-                    printf("\nPOSICAO INVALIDA\n");
-                    return;
-                }
-                ant->prox = aux->prox;
-                if(aux->prox!=NULL)
-                    aux->prox->ant=ant;
-                free(aux);
-            }
-            printf("\nELEMENTO REMOVIDO\n");
+        int cont=1;
+        if(cont==pos){
+           li->inicio=aux->prox;
+           if(aux->prox!=NULL)
+              aux->prox->ant=NULL;
+           free(aux);
+         }else{
+             ELEM *ant;
+             while((aux!=NULL)&&(cont != pos)){
+                  ant=aux;
+                  aux=aux->prox;
+                  cont++;
+             }
+             if(aux==NULL){
+                  printf("\nPOSICAO INVALIDA\n");
+                  return;
+             }
+             ant->prox = aux->prox;
+             if(aux->prox!=NULL)
+                  aux->prox->ant=ant;
+             free(aux);
+        }
+        printf("\nELEMENTO REMOVIDO\n");
     }
 }
-
 void imprimirLista(LISTAD *li){
     if(li!=NULL){
         ELEM *aux=li->inicio;
